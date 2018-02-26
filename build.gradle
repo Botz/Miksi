@@ -16,6 +16,9 @@ buildscript {
         dagger_android_compiler = "com.google.dagger:dagger-android-processor:$dagger_version"
         retrofit = "com.squareup.retrofit2:retrofit:$retrofit_version"
         retrofit_gson = "com.squareup.retrofit2:converter-gson:$retrofit_version"
+        retrofit_coroutines = "ru.gildor.coroutines:kotlin-coroutines-retrofit:0.9.0"
+        kotlin_coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.20"
+        http_logging_interceptor = "com.squareup.okhttp3:logging-interceptor:3.9.1"
 
         appDependencies = [
                 kotlin_stdlib,
@@ -25,6 +28,9 @@ buildscript {
                 dagger_android,
                 retrofit,
                 retrofit_gson,
+                retrofit_coroutines,
+                kotlin_coroutines,
+                http_logging_interceptor
         ]
 
         appCompiler = [
